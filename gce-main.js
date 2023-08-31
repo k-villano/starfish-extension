@@ -14,10 +14,13 @@ if (( document.documentElement.textContent || document.documentElement.innerText
         vidtag.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen; web-share')
         vidtag.setAttribute('type', 'video/mp4')
         vidtag.setAttribute('wmode', 'transparent')
-        vidtag.style.width = '100vw'
-        vidtag.style.height = '100vw'
+        vidtag.style.width = '100%'
+        vidtag.style.height = '100%'
+        vidtag.style.top = '0'
+        vidtag.style.left = '0'
+        
         vidtag.style.objectFit = 'cover'
-        vidtag.style.position = 'fixed'
+        vidtag.style.position = 'absolute'
         vidtag.style.zIndex =  '-1'
         vidtag.autoplay = true
         vidtag.setAttribute('frameboard', '0')
