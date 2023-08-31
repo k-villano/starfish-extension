@@ -6,6 +6,11 @@ if (( document.documentElement.textContent || document.documentElement.innerText
         //ourBody.style.backgroundColor = 'blue';
         const ourBody = document.querySelector('body');
         ourBody.style.backgroundColor = 'teal'
+        const ourEl = document.querySelectorAll('*')
+        console.log(ourEl)
+        for (let el of ourEl){
+            el.style.backgroundColor = 'transparent'
+        }
         
 
         const vidtag = document.createElement('embed')
