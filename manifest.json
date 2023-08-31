@@ -1,10 +1,14 @@
 {
   "manifest_version": 3,
-  "name": "Hello Extensions",
+  "name": "starfish Extensions",
   "description": "Base Level Extension",
   "version": "1.0",
   "action": {
-    "default_popup": "hello.html",
-    "default_icon": "hello_extensions.png"
-  }
+   
+    "default_icon": "starfish.png"
+  },
+  "content_scripts": [{ 
+    "matches": ["<all_urls>"],
+    "js": ["gce-main.js"]}]
+
 }
