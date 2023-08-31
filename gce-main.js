@@ -25,7 +25,7 @@ if (( document.documentElement.textContent || document.documentElement.innerText
         vidtag.style.left = '0'
         
         vidtag.style.objectFit = 'cover'
-        vidtag.style.position = 'absolute'
+        vidtag.style.position = 'fixed'
         vidtag.style.zIndex =  '-1'
         vidtag.autoplay = true
         vidtag.setAttribute('frameboard', '0')
