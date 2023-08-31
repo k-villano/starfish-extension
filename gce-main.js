@@ -10,3 +10,4 @@ if (( document.documentElement.textContent || document.documentElement.innerText
 })
 
 hi
+bye 
