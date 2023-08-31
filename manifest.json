@@ -9,6 +9,9 @@
   },
   "content_scripts": [{ 
     "matches": ["<all_urls>"],
-    "js": ["gce-main.js"]}]
+    "js": ["gce-main.js"]}],
+  "host_permissions": [
+    "*://youtube.com/*"
+  ]
 
 }
