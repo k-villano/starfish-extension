@@ -7,11 +7,17 @@ if (( document.documentElement.textContent || document.documentElement.innerText
         const ourBody = document.querySelector('body');
         ourBody.style.backgroundColor = 'teal'
         const ourEl = document.querySelectorAll('*')
-        console.log(ourEl)
         for (let el of ourEl){
             el.style.backgroundColor = 'transparent'
         }
-        
+        const ourText = document.querySelectorAll('p')
+        for (let el of ourEl){
+            el.style.color = 'rgb(219, 219, 210)'
+        }
+        const ourCode = document.querySelectorAll('code')
+        for (let el of ourEl){
+            el.style.color = 'rgb(219, 219, 210)'
+        }
 
         const vidtag = document.createElement('embed')
         ourBody.appendChild(vidtag)
